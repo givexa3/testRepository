@@ -44,4 +44,8 @@ public class Main {
     public static int calculateValue(){
         return 10;
     }
+
+    public static int calculateValue2(){
+        return 20;
+    }
 }

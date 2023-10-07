@@ -47,4 +47,8 @@ public class UserDetails {
     private void sleep(){
         System.out.println("Sleeping");
     }
+
+    private void sleep2(){
+        System.out.println("Sleeping");
+    }
 }
