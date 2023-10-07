@@ -48,4 +48,8 @@ public class Main {
     public static int calculateValue2(){
         return 20;
     }
+
+    public static int calculateValue3(){
+        return 30;
+    }
 }
