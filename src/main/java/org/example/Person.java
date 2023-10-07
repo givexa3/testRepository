@@ -35,4 +35,7 @@ public class Person {
         this.lastName = lastName;
     }
 
+    public void sayBye(){
+        System.out.println("Bye");
+    }
 }
