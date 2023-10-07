@@ -43,4 +43,8 @@ public class UserDetails {
     private void sayHi(){
         System.out.println("Hi New MethoD!!!");
     }
+
+    private void sleep(){
+        System.out.println("Sleeping");
+    }
 }
