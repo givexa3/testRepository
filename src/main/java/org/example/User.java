@@ -10,8 +10,6 @@ public class User {
 
     private int size;
 
-    private int height;
-
     public User(String name, int age, Person person, UserDetails userDetails) {
         this.name = name;
         this.age = age;
