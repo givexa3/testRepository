@@ -7,21 +7,21 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args){
 
-        User user1 = new User("USER1", 23, null, new UserDetails("Anabana"));
-        User user2 = new User("USER2", 25, null, new UserDetails("GIVEXA"));
-        User user3 = new User("USER3", 27, null, new UserDetails("Zoro"));
+        UserRenamed userRenamed1 = new UserRenamed("USER1", 23, null, new UserDetails("Anabana"));
+        UserRenamed userRenamed2 = new UserRenamed("USER2", 25, null, new UserDetails("GIVEXA"));
+        UserRenamed userRenamed3 = new UserRenamed("USER3", 27, null, new UserDetails("Zoro"));
 
-        List<User> userList = new ArrayList<>();
-        userList.add(user1);
-        userList.add(user2);
-        userList.add(user3);
+        List<UserRenamed> userRenamedList = new ArrayList<>();
+        userRenamedList.add(userRenamed1);
+        userRenamedList.add(userRenamed2);
+        userRenamedList.add(userRenamed3);
 
-        List<User> result = userList
+        List<UserRenamed> result = userRenamedList
                 .stream()
                 .sorted(Comparator.comparing(u -> u.getUserDetails().getFullName()))
                 .collect(Collectors.toList());
 
-        List<User> result2 = userList
+        List<UserRenamed> result2 = userRenamedList
                 .stream()
                 .sorted(Comparator.comparing(u -> u.getUserDetails().getFullName(), Comparator.reverseOrder()))
                 .collect(Collectors.toList());
@@ -31,5 +31,11 @@ public class Main {
         System.out.println("Result 2: ");
 
         result2.forEach(d-> System.out.println(d.getName()));
+
+        int a = 10;
+        int b = 20;
+        int answer = a * b;
+
+        System.out.println(answer);
     }
 }

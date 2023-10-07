@@ -1,12 +1,14 @@
 package org.example;
 
-public class User {
+public class UserRenamed {
     private String name;
     private int age;
     private Person person;
     private UserDetails userDetails;
 
-    public User(String name, int age, Person person, UserDetails userDetails) {
+    private int weight;
+
+    public UserRenamed(String name, int age, Person person, UserDetails userDetails) {
         this.name = name;
         this.age = age;
         this.person = person;

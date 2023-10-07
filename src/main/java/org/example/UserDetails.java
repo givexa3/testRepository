@@ -39,4 +39,8 @@ public class UserDetails {
     }
 
     private String fullName;
+
+    private void sayHi(){
+        System.out.println("Hi New MethoD!!!");
+    }
 }
